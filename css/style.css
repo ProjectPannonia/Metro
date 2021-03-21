@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../pic/main-bg.jpg') no-repeat;
+    font-family: 'Teko', sans-serif;
+}
+
+.wrapper {
+    -webkit-box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
+    -moz-box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
+    box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
+    display: flex;
+    width: 1600px;
+    height: 900px;
+    background: url('../pic/bg.jpg') no-repeat;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+header menu ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+header menu ul li{
+    align-content: center;
+    display: inline;
+    padding: 10px;
+}
+
+header menu ul li a {
+    text-decoration: none;
+    font-size: 45px;
+    cursor: pointer;
+    color: white;
+}
+
+header menu ul li a:hover {
+    color: rgba(199,181,20,.8);
+
+    text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
+}
+
