@@ -20,9 +20,21 @@
     
         <menu>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Books</a></li>
-                <li><a href="">Games</a></li>
+                <li>
+                    <a id="homeBtn" onclick="switchdiv(this.id)" href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a id="bookBtn" onclick="switchdiv(this.id)" href="">
+                        Books
+                    </a>
+                </li>
+                <li>
+                    <a id="gamesBtn" onclick="switchdiv(this.id)" href="">
+                        Games
+                    </a>
+                </li>
             </ul>
         
         </menu>
@@ -31,12 +43,36 @@
     
     <main>
     
+        <div class="books">
+            
+            <div id="first" class="book"></div>
+            <div id="second" class="book"></div>
+            <div id="third" class="book"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu ante rutrum, porta nisi venenatis, convallis est. Morbi eu porttitor libero. Aliquam id lacus lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel tristique diam. Aliquam blandit vel libero sed lobortis. In pulvinar, est sit amet pulvinar elementum, elit purus feugiat urna, non blandit urna odio et leo.
+            </p>
+        </div>
+        <div class="games">
         
+        
+        
+        </div>
     
     </main>
     
-    <footer></footer>
+    <footer>
+    
+        <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">&#169; Project Pannonia</a></li>
+        </ul>
+    
+    </footer>
     
 </div>
-</body>
+    
+    <script type="text/javascript" src="script/script.js"></script>
+
+    </body>
 </html>

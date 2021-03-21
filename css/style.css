@@ -7,6 +7,7 @@
 body {
     background: url('../pic/main-bg.jpg') no-repeat;
     font-family: 'Teko', sans-serif;
+    color: white;
 }
 
 .wrapper {
@@ -14,34 +15,98 @@ body {
     -moz-box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
     box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
     display: flex;
-    width: 1600px;
+    max-width: 1600px;
     height: 900px;
     background: url('../pic/bg.jpg') no-repeat;
     margin: 30px auto;
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 
-header menu ul {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
     list-style: none;
-    margin-top: 30px;
 }
 
-header menu ul li{
+ul li{
     align-content: center;
     display: inline;
     padding: 10px;
 }
 
+header {
+    align-self: flex-start;
+    width: 100%;
+}
+
+header menu ul {
+    margin-top: 30px;
+}
+
 header menu ul li a {
-    text-decoration: none;
     font-size: 45px;
-    cursor: pointer;
-    color: white;
+    cursor: pointer; 
 }
 
 header menu ul li a:hover {
     color: rgba(199,181,20,.8);
-
     text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
+}
+
+main {
+    align-self: center;
+    margin: 10px auto;
+}
+
+main div {
+    height: 700px;
+    width: 1500px;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    
+    font-size: 36px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.books {
+    display: block;
+    padding: 10px;
+}
+
+.book {
+    display: inline;
+    width: 300px;
+    height: 200px;
+    background: white;
+    margin: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: red;
+    align-self: flex-end;
+    
+    background:rgba(183, 191, 195, .5);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    font-size: 27px;
+    align-self: center;
+}
+
+footer ul a:hover {
+    color: rgba(0, 0, 0, 0.8);
 }
 
