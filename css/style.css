@@ -25,6 +25,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul {
@@ -67,6 +68,7 @@ main div {
     display: none;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
+    
     font-size: 36px;
     padding: 20px;
     line-height: 1.5;
