@@ -62,6 +62,10 @@ main {
     margin: 10px auto;
 }
 
+main h1 {
+    text-align: center;
+}
+
 main div {
     height: 700px;
     width: 1500px;
@@ -86,6 +90,8 @@ main div {
     background: white;
     margin: 20px;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38); 
+    box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38);
 }
 
 .flip-vertical-left {
@@ -100,8 +106,6 @@ main div {
     transform: rotateY(-180deg);
   }
 }
-
-
 
 #first {
     background: url(../pic/first.png);
