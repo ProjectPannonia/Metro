@@ -1,6 +1,22 @@
 function switchdiv(id) {
-    console.log("id: " + id);
     
+    if(id === "homeBtn") {
+        $("#bookCont").hide();
+        $("#gamesCont").hide();
+    } else if(id === "bookBtn") {
+        $("#gamesCont").hide();
+        $("#bookCont").toggle();
+    } else {
+       $("#bookCont").hide();
+        $("#gamesCont").toggle(); 
+    }
+    
+   //$("#"+id).toggle();
+    
+}
+
+function getDispProperty(id) {
+    return document.getElementById(id).style.display.val;
 }
 
 function flip(id) {

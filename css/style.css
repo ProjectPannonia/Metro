@@ -60,6 +60,7 @@ header menu ul li a:hover {
 main {
     align-self: center;
     margin: 10px auto;
+    display: flex;
 }
 
 main h1 {
@@ -72,15 +73,14 @@ main div {
     display: none;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
-    
     font-size: 36px;
     padding: 20px;
     line-height: 1.5;
 }
 
 .books {
-    display: block;
     padding: 10px;
+    
 }
 
 .book {
@@ -117,7 +117,11 @@ main div {
     background: url(../pic/third.png);
 }
 #first, #second, #third {
-    background-size: cover;
+    background-size: cover;   
+}
+
+#bookCont, #gamesCont {
+    display: none;
 }
 footer {
     width: 100%;
