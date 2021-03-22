@@ -34,10 +34,5 @@ function flip(id) {
         box.style.background = "white";
     }
     
-//    box.classList.add("flip-vertical-left");
-//    box.style.backgroundImage = "none";
-//    box.style.background = "white";
-    //box.style.backgroundImage = "url('pic/first.png')";
-    
-    //document.getElementById(id).classList.add("flip-vertical-left");
+
 }
