@@ -18,7 +18,15 @@ function flip(id) {
     
     if(box.classList.contains("flip-vertical-left")) {
         box.classList.remove("flip-vertical-left");
-        box.style.backgroundImage = "url('pic/first.png')";
+        
+        if(id === "first"){
+            box.style.backgroundImage = "url('pic/first.png')";
+        } else if(id === "second") {
+            box.style.backgroundImage = "url('pic/second.png')";
+        } else {
+            box.style.backgroundImage = "url('pic/third.png')";
+        }
+        
         box.style.backgroundSize = "cover";
     } else {
         box.classList.add("flip-vertical-left");
