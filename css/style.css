@@ -80,13 +80,12 @@ main div {
 
 .books {
     padding: 10px;
-    
 }
 
 .book {
-    display: inline-block;
-    width: 300px;
-    height: 400px;
+    display: block;
+    width: 130px;
+    height: 200px;
     background: white;
     margin: 20px;
     border-radius: 10px;

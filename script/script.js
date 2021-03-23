@@ -1,3 +1,4 @@
+
 function switchdiv(id) {
     
     if(id === "homeBtn") {
@@ -33,6 +34,40 @@ function flip(id) {
         box.style.backgroundImage = "none";
         box.style.background = "white";
     }
-    
-
 }
+
+let flipFirst = function(id) {
+    let firstBox = document.getElementById(id);
+    
+    if(firstBox.classList.contains("flip-vertical-left")) {
+        firstBox.classList.remove("flip-vertical-left");
+        firstBox.style.backgroundImage = "url('pic/first.png')";
+        firstBox.style.backgroundSize = "cover";
+    } else {
+        firstBox.classList.add("flip-vertical-left");
+        firstBox.style.backgroundImage = "url('pic/first-bg.png')";
+        
+    }
+    
+}
+
+
+$( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
