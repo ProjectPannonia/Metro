@@ -96,7 +96,6 @@ main div {
 
 .flip-vertical-left {
 	animation: flip-vertical-left 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    background-color: red;
 }
 
 @keyframes flip-vertical-left {
