@@ -10,13 +10,10 @@ function switchdiv(id) {
     } else if(id === "bookBtn") {
 
         $("#gamesCont").hide(1000);
-        
+
         if($("#bookCont").css("display") == "none") {
-            
            menuShowHelper("#bookCont");
-        
         } else {
-            
             menuHideHelper("#bookCont");
         }
 
@@ -24,14 +21,10 @@ function switchdiv(id) {
 
         $("#bookCont").hide(1000);
         
-        if($("#gamesCont").css("display") == "none") {
-            
+        if($("#gamesCont").css("display") == "none") {  
            menuShowHelper("#gamesCont");
-
         } else {
-            
            menuHideHelper("#gamesCont");
-        
         }
 
     }   
