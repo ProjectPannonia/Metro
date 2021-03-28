@@ -3,6 +3,7 @@ function switchdiv(id) {
     
     if(id === "homeBtn") {
         
+        $("main").css("background","rgba(0,0,0, 0");
         $("#bookCont").hide(1000);
         $("#gamesCont").hide(1000);
 
@@ -10,19 +11,13 @@ function switchdiv(id) {
 
         $("#gamesCont").hide(1000);
         
-        
         if($("#bookCont").css("display") == "none") {
-            $("main").css("background","rgba(0, 0, 0, .5)");
-            $("#bookCont").show(1000);
-            $("#bookCont").css("display","flex");
-            $("#bookCont").css("flex-direction","row");
-            $("#bookCont").css("flex-wrap","no-wrap");
+            
+           menuShowHelper("#bookCont");
         
         } else {
-            $("main").css("background","rgba(0, 0, 0, 0)");
-            $("#bookCont").hide(1000);
-            $("#bookCont").css("display","none");
-        
+            
+            menuHideHelper("#bookCont");
         }
 
     } else {
@@ -30,22 +25,34 @@ function switchdiv(id) {
         $("#bookCont").hide(1000);
         
         if($("#gamesCont").css("display") == "none") {
-
-            $("main").css("background","rgba(0, 0, 0, .5)");
-            $("#gamesCont").show(1000);
-            $("#gamesCont").css("display","flex");
-            $("#gamesCont").css("flex-direction","row");
-            $("#gamesCont").css("flex-wrap","no-wrap");
+            
+           menuShowHelper("#gamesCont");
 
         } else {
-
-            $("main").css("background","rgba(0, 0, 0, 0)");
-            $("#gamesCont").hide(1000);
-            $("#gamesCont").css("display","none");
-
+            
+           menuHideHelper("#gamesCont");
+        
         }
 
     }   
+}
+
+let menuShowHelper = function(id) {
+    
+    $("main").css("background","rgba(0, 0, 0, .5)");
+    $(id).show(1000);
+    $(id).css("display","flex");
+    $(id).css("flex-direction","row");
+    $(id).css("flex-wrap","no-wrap");
+
+}
+
+let menuHideHelper = function(id) {
+    
+    $("main").css("background","rgba(0, 0, 0, 0)");
+    $(id).hide(1000);
+    $(id).css("display","none");
+
 }
 
 $("#first").click(function(){
@@ -74,7 +81,6 @@ $("#first").click(function(){
 $("#second").click(function() {
     let selected = $("#second");
     let flipped = selected.hasClass("flip-vertical-left");
-    
     
     if(flipped) {
 
@@ -124,3 +130,66 @@ let hideAuthorInfo = function() {
 let showAuthorInfo = function() {
     $(".authorInfo").show();
 }
+
+$("#firstGame").click(function(){
+    let selected = $("#firstGame");
+    let flipped = selected.hasClass("flip-vertical-left");
+
+    if(flipped) {
+
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/games/first.png')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","1");
+        $("#first_game_description").hide();
+
+    } else {
+
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/games/first.png')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","0.5");
+        $("#first_game_description").show();
+
+    }
+});
+$("#secondGame").click(function(){
+    let selected = $("#secondGame");
+    let flipped = selected.hasClass("flip-vertical-left");
+
+    if(flipped) {
+
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/games/second.jpg')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","1");
+        $("#second_game_description").hide();
+
+    } else {
+
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/games/second.jpg')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","0.5");
+        $("#second_game_description").show();
+
+    }
+});
+$("#thirdGame").click(function(){
+    let selected = $("#thirdGame");
+    let flipped = selected.hasClass("flip-vertical-left");
+
+    if(flipped) {
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/games/third.jpg')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","1");
+        $("#third_game_description").hide();
+    } else {
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/games/third.jpg')");
+        selected.css("backgroundSize","cover");
+        selected.css("opacity","0.5");
+        $("#third_game_description").show();
+    }
+});

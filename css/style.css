@@ -222,11 +222,11 @@ main div {
     display: none;
     justify-content: space-between;
 }
+
 footer {
 
     width: 100%;
     height: 50px;
-    background: red;
     align-self: flex-end;
     background:rgba(183, 191, 195, .5);
     border-bottom-left-radius: 15px;
