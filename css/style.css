@@ -16,6 +16,7 @@ body {
     box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
     display: flex;
     max-width: 1600px;
+    min-width: 1600px;
     height: 900px;
     background: url('../pic/bg.jpg') no-repeat;
     margin: 30px auto;
@@ -86,32 +87,34 @@ main div {
 
 .bookLeft {
     min-width: auto;
-    max-width: 250px;
+    max-width: 300px;
     background: red;
-    display: flex;
-    justify-content: space-between;
     margin-right: 10px;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 .bookRight {
     min-width: 1300px;
     padding: 10px;
     background:green;
     max-width: 600px;
-    /*display: flex;*/
     display: none;
-    flex-direction: row;
+    
+    /*flex-direction: row;
     flex-wrap: wrap;
+    */
 }
 .bookRight p {
     font-size: 30px;
 }
 
 .book {
-    display: block;
+    
     width: 140px;
     height: 200px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38); 
     box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38);
@@ -142,7 +145,7 @@ main div {
     background: url(../pic/third.png);
 }
 #first, #second, #third {
-    background-size: cover;   
+    background-size: cover; 
 }
 
 #bookCont, #gamesCont {
