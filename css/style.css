@@ -109,6 +109,9 @@ main div {
     padding: 10px;
     background:green;
     max-width: 600px;
+    display: flex;
+}
+.hidden {
     display: none;
 }
 .bookRight p {
