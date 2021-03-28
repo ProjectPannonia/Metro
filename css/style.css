@@ -127,7 +127,6 @@ main div {
 
     min-width: auto;
     max-width: 300px;
-    /*background: red;*/
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -138,7 +137,6 @@ main div {
 
     min-width: 1300px;
     padding: 10px;
-    /*background:green;*/
     max-width: 600px;
     display: flex;
 
@@ -182,28 +180,46 @@ main div {
 
 #first {
 
-    background: url(../pic/first.png);
+    background: url(../pic/books/first.png);
     
 }
 #second {
 
-    background: url(../pic/second.png);
+    background: url(../pic/books/second.png);
 
 }
 #third {
 
-    background: url(../pic/third.png);
+    background: url(../pic/books/third.png);
 
 }
-#first, #second, #third {
-
+#first, #second, #third, #firstGame, #secondGame, #thirdGame {
     background-size: cover;
-
 }
 
+.gamesLeft {
+    min-width: auto;
+    max-width: 300px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#firstGame {
+    background: url(../pic/games/first.png);
+    background-size: cover;
+}
+#secondGame {
+    background: url(../pic/games/second.jpg);
+    background-size: cover;
+}
+#thirdGame {
+    background: url(../pic/games/third.jpg);
+    background-size: cover;
+}
 #bookCont, #gamesCont {
     display: none;
-    /*display: flex;*/
     justify-content: space-between;
 }
 footer {

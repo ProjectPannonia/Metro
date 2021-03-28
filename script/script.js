@@ -38,7 +38,7 @@ function switchdiv(id) {
             $("#gamesCont").css("flex-wrap","no-wrap");
 
         } else {
-            
+
             $("main").css("background","rgba(0, 0, 0, 0)");
             $("#gamesCont").hide(1000);
             $("#gamesCont").css("display","none");
@@ -56,7 +56,7 @@ $("#first").click(function(){
 
         showAuthorInfo();
         selected.removeClass("flip-vertical-left");
-        selected.css("background","url('pic/first.png')");
+        selected.css("background","url('pic/books/first.png')");
         selected.css("backgroundSize","cover");
         $("#first_book_description").hide();
 
@@ -64,7 +64,7 @@ $("#first").click(function(){
 
         hideAuthorInfo();
         selected.addClass("flip-vertical-left");
-        selected.css("background","url('pic/first-bg.png')");
+        selected.css("background","url('pic/books/first-bg.png')");
         selected.css("backgroundSize","cover");
         $("#first_book_description").show();
 
@@ -80,7 +80,7 @@ $("#second").click(function() {
 
         showAuthorInfo();
         selected.removeClass("flip-vertical-left");
-        selected.css("background","url('pic/second.png')");
+        selected.css("background","url('pic/books/second.png')");
         selected.css("backgroundSize","cover");
         $("#second_book_description").hide();
         
@@ -88,7 +88,7 @@ $("#second").click(function() {
 
         hideAuthorInfo();
         selected.addClass("flip-vertical-left");
-        selected.css("background","url('pic/second-bg.png')");
+        selected.css("background","url('pic/books/second-bg.png')");
         selected.css("backgroundSize","cover");
         $("#second_book_description").show();
 
@@ -103,7 +103,7 @@ $("#third").click(function() {
 
         showAuthorInfo();
         selected.removeClass("flip-vertical-left");
-        selected.css("background","url('pic/third.png')");
+        selected.css("background","url('pic/books/third.png')");
         selected.css("backgroundSize","cover");
         $("#third_book_description").hide();
 
@@ -111,7 +111,7 @@ $("#third").click(function() {
 
         hideAuthorInfo();
         selected.addClass("flip-vertical-left");
-        selected.css("background","url('pic/third-bg.png')");
+        selected.css("background","url('pic/books/third-bg.png')");
         selected.css("backgroundSize","cover");
         $("#third_book_description").show();
 
