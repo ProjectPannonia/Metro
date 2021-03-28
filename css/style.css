@@ -180,17 +180,17 @@ main div {
 
 #first {
 
-    background: url(../pic/books/first.png);
+    background: url(../pic/books/first.jpg);
     
 }
 #second {
 
-    background: url(../pic/books/second.png);
+    background: url(../pic/books/second.jpg);
 
 }
 #third {
 
-    background: url(../pic/books/third.png);
+    background: url(../pic/books/third.jpg);
 
 }
 #first, #second, #third, #firstGame, #secondGame, #thirdGame {
@@ -207,7 +207,7 @@ main div {
 }
 
 #firstGame {
-    background: url(../pic/games/first.png);
+    background: url(../pic/games/first.jpg);
     background-size: cover;
 }
 #secondGame {
