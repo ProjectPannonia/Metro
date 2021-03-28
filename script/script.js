@@ -2,19 +2,45 @@
 function switchdiv(id) {
     
     if(id === "homeBtn") {
-
+        
         $("#bookCont").hide(1000);
         $("#gamesCont").hide(1000);
 
     } else if(id === "bookBtn") {
 
         $("#gamesCont").hide(1000);
-        $("#bookCont").toggle(1000);
+        
+        if($("#bookCont").css("display") == "none") {
+        
+            $("#bookCont").show(1000);
+            $("#bookCont").css("display","flex");
+            $("#bookCont").css("flex-direction","row");
+            $("#bookCont").css("flex-wrap","no-wrap");
+        
+        } else {
+        
+            $("#bookCont").hide(1000);
+            $("#bookCont").css("display","none");
+        
+        }
 
     } else {
 
         $("#bookCont").hide(1000);
-        $("#gamesCont").toggle(1000); 
+        
+        if($("#gamesCont").css("display") == "none") {
+
+            $("#gamesCont").show(1000);
+            $("#gamesCont").css("display","flex");
+            $("#gamesCont").css("flex-direction","row");
+            $("#gamesCont").css("flex-wrap","no-wrap");
+
+        } else {
+
+            $("#gamesCont").hide(1000);
+            $("#gamesCont").css("display","none");
+
+        }
 
     }   
 }

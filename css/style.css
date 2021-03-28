@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
 * {
+
     box-sizing: border-box;
+
 }
 
 body {
+
     background: url('../pic/main-bg.jpg') no-repeat;
     font-family: 'Teko', sans-serif;
     color: white;
+
 }
 
 .wrapper {
+
     -webkit-box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
     -moz-box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
     box-shadow: 3px 5px 44px 0px rgba(161,204,185,1);
@@ -22,54 +27,72 @@ body {
     margin: 30px auto;
     border-radius: 15px;
     flex-wrap: wrap;
+
 }
 
 a {
+
     text-decoration: none;
     color: white;
+
 }
 
 ul {
+
     list-style: none;
+
 }
 
 ul li{
+
     align-content: center;
     display: inline;
     padding: 10px;
+
 }
 
 header {
+
     align-self: flex-start;
     width: 100%;
+
 }
 
 header menu ul {
+
     margin-top: 30px;
+
 }
 
 header menu ul li a {
+
     font-size: 45px;
     cursor: pointer; 
+
 }
 
 header menu ul li a:hover {
+
     color: rgba(199,181,20,.8);
     text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
+
 }
 
 main {
+
     align-self: center;
     margin: 10px auto;
     display: flex;
     height: 700px;
     min-width: 1500px;
-    background: hotpink;
     padding: 10px;
+
 }
 
 main h1 {
+
     text-align: center;
+
 }
 
 /*
@@ -85,17 +108,21 @@ main div {
 }
 */
 .authorInfo {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     font-size: 36px;
+
 }
 .authorImg {
+
     min-width: 400px;
     
 }
 .bookLeft {
+
     min-width: auto;
     max-width: 300px;
     background: red;
@@ -103,19 +130,26 @@ main div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
 }
 .bookRight {
+
     min-width: 1300px;
     padding: 10px;
     background:green;
     max-width: 600px;
     display: flex;
+
 }
 .hidden {
+
     display: none;
+
 }
 .bookRight p {
+
     font-size: 30px;
+
 }
 
 .book {
@@ -126,9 +160,11 @@ main div {
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38); 
     box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38);
+
 }
 
 .flip-vertical-left {
+
     animation: flip-vertical-left 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     
 }
@@ -143,25 +179,33 @@ main div {
 }
 
 #first {
+
     background: url(../pic/first.png);
     
 }
 #second {
+
     background: url(../pic/second.png);
+
 }
 #third {
+
     background: url(../pic/third.png);
+
 }
 #first, #second, #third {
-    background-size: cover; 
+
+    background-size: cover;
+
 }
 
 #bookCont, #gamesCont {
-    /*display: none;*/
-    display: flex;
+    display: none;
+    /*display: flex;*/
     justify-content: space-between;
 }
 footer {
+
     width: 100%;
     height: 50px;
     background: red;
@@ -172,15 +216,20 @@ footer {
     color:black;
     display: flex;
     justify-content: center;
+
 }
 
 footer ul {
+
     font-size: 27px;
     align-self: center;
+
 }
 
 footer ul a:hover {
+
     color: rgba(0, 0, 0, 0.8);
+
 }
 
 /*
