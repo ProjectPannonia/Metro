@@ -118,6 +118,11 @@ main div {
     min-width: 1300px;
 
 }
+
+.authorInfo .authorBio a:hover {
+    color: rgba(199,181,20,.8);
+    text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
+}
 .authorImg {
 
     min-width: 400px;
