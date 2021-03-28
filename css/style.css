@@ -61,15 +61,20 @@ main {
     align-self: center;
     margin: 10px auto;
     display: flex;
+    height: 700px;
+    min-width: 1500px;
+    background: hotpink;
+    padding: 10px;
 }
 
 main h1 {
     text-align: center;
 }
 
+/*
 main div {
     height: 700px;
-    width: 1500px;
+    max-width: 1500px;
     display: none;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
@@ -77,16 +82,34 @@ main div {
     padding: 20px;
     line-height: 1.5;
 }
+*/
 
-.books {
+.bookLeft {
+    min-width: auto;
+    max-width: 250px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    flex-direction: column;
+}
+.bookRight {
+    min-width: 1300px;
     padding: 10px;
+    background:green;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bookRight p {
+    font-size: 30px;
 }
 
 .book {
     display: block;
     width: 130px;
     height: 200px;
-    /*background: white;*/
     margin: 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 9px 3px rgba(255,255,255,0.38); 
@@ -120,7 +143,9 @@ main div {
 }
 
 #bookCont, #gamesCont {
-    display: none;
+    /*display: none;*/
+    display: flex;
+    justify-content: space-between;
 }
 footer {
     width: 100%;
@@ -143,6 +168,11 @@ footer ul {
 footer ul a:hover {
     color: rgba(0, 0, 0, 0.8);
 }
+
+/*
+    Test classes
+*/
+
 
 
 
