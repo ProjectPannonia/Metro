@@ -13,43 +13,51 @@ function switchdiv(id) {
     }   
 }
 
-
-function flip(id) {
-    var box = document.getElementById(id);
+$("#first").click(function(){
+    let selected = $("#first");
+    let flipped = selected.hasClass("flip-vertical-left");
     
-    if(box.classList.contains("flip-vertical-left")) {
-        box.classList.remove("flip-vertical-left");
-        
-        if(id === "first"){
-            box.style.backgroundImage = "url('pic/first.png')";
-        } else if(id === "second") {
-            box.style.backgroundImage = "url('pic/second.png')";
-        } else {
-            box.style.backgroundImage = "url('pic/third.png')";
-        }
-        
-        box.style.backgroundSize = "cover";
+    if(flipped) {
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/first.png')");
+        selected.css("backgroundSize","cover");
     } else {
-        box.classList.add("flip-vertical-left");
-        box.style.backgroundImage = "none";
-        box.style.background = "white";
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/first-bg.png')");
+        selected.css("backgroundSize","cover");
     }
-}
+});
 
-let flipFirst = function(id) {
-    let firstBox = document.getElementById(id);
+$("#second").click(function() {
+    let selected = $("#second");
+    let flipped = selected.hasClass("flip-vertical-left");
     
-    if(firstBox.classList.contains("flip-vertical-left")) {
-        firstBox.classList.remove("flip-vertical-left");
-        firstBox.style.backgroundImage = "url('pic/first.png')";
-        firstBox.style.backgroundSize = "cover";
+    if(flipped) {
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/second.png')");
+        selected.css("backgroundSize","cover");
     } else {
-        firstBox.classList.add("flip-vertical-left");
-        firstBox.style.backgroundImage = "url('pic/first-bg.png')";
-        
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/second-bg.png')");
+        selected.css("backgroundSize","cover");
     }
-    
-}
+});
+
+$("#third").click(function() {
+    let selected = $("#third");
+    let flipped = selected.hasClass("flip-vertical-left");
+
+    if(flipped) {
+        selected.removeClass("flip-vertical-left");
+        selected.css("background","url('pic/third.png')");
+        selected.css("backgroundSize","cover");
+    } else {
+        selected.addClass("flip-vertical-left");
+        selected.css("background","url('pic/third-bg.png')");
+        selected.css("backgroundSize","cover");
+    }
+});
+
 
 
 $( function() {

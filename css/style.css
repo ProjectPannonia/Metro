@@ -98,7 +98,8 @@ main div {
     padding: 10px;
     background:green;
     max-width: 600px;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -108,7 +109,7 @@ main div {
 
 .book {
     display: block;
-    width: 130px;
+    width: 140px;
     height: 200px;
     margin: 20px;
     border-radius: 10px;
@@ -117,7 +118,8 @@ main div {
 }
 
 .flip-vertical-left {
-	animation: flip-vertical-left 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-vertical-left 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    
 }
 
 @keyframes flip-vertical-left {
@@ -131,6 +133,7 @@ main div {
 
 #first {
     background: url(../pic/first.png);
+    
 }
 #second {
     background: url(../pic/second.png);
