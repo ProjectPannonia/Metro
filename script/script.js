@@ -10,15 +10,16 @@ function switchdiv(id) {
 
         $("#gamesCont").hide(1000);
         
-        if($("#bookCont").css("display") == "none") {
         
+        if($("#bookCont").css("display") == "none") {
+            $("main").css("background","rgba(0, 0, 0, .5)");
             $("#bookCont").show(1000);
             $("#bookCont").css("display","flex");
             $("#bookCont").css("flex-direction","row");
             $("#bookCont").css("flex-wrap","no-wrap");
         
         } else {
-        
+            $("main").css("background","rgba(0, 0, 0, 0)");
             $("#bookCont").hide(1000);
             $("#bookCont").css("display","none");
         
@@ -30,13 +31,15 @@ function switchdiv(id) {
         
         if($("#gamesCont").css("display") == "none") {
 
+            $("main").css("background","rgba(0, 0, 0, .5)");
             $("#gamesCont").show(1000);
             $("#gamesCont").css("display","flex");
             $("#gamesCont").css("flex-direction","row");
             $("#gamesCont").css("flex-wrap","no-wrap");
 
         } else {
-
+            
+            $("main").css("background","rgba(0, 0, 0, 0)");
             $("#gamesCont").hide(1000);
             $("#gamesCont").css("display","none");
 
