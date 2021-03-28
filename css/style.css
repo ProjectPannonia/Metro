@@ -84,7 +84,17 @@ main div {
     line-height: 1.5;
 }
 */
-
+.authorInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 36px;
+}
+.authorImg {
+    min-width: 400px;
+    
+}
 .bookLeft {
     min-width: auto;
     max-width: 300px;
@@ -93,7 +103,6 @@ main div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*flex-wrap: wrap;*/
 }
 .bookRight {
     min-width: 1300px;
@@ -101,10 +110,6 @@ main div {
     background:green;
     max-width: 600px;
     display: none;
-    
-    /*flex-direction: row;
-    flex-wrap: wrap;
-    */
 }
 .bookRight p {
     font-size: 30px;
