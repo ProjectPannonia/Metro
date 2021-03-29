@@ -67,7 +67,21 @@ $("#first").click(function(){
         selected.css("background","url('pic/books/first-bg.jpg')");
         selected.css("backgroundSize","cover");
         $("#first_book_description").show();
-
+        
+        if($("#second").hasClass("flip-vertical-left")) {
+            $("#second").removeClass("flip-vertical-left");
+            $("#second").css("background","url('pic/books/second.jpg')");
+            $("#second").css("backgroundSize","cover");
+            $("#second_book_description").hide();
+        }
+        
+        if($("#third").hasClass("flip-vertical-left")) {
+            $("#third").removeClass("flip-vertical-left");
+            $("#third").css("background","url('pic/books/third.jpg')");
+            $("#third").css("backgroundSize","cover");
+            $("#third_book_description").hide();
+        }
+        
     }
 });
 
@@ -90,6 +104,20 @@ $("#second").click(function() {
         selected.css("background","url('pic/books/second-bg.jpg')");
         selected.css("backgroundSize","cover");
         $("#second_book_description").show();
+
+        if ($("#first").hasClass("flip-vertical-left")) {
+            $("#first").removeClass("flip-vertical-left");
+            $("#first").css("background","url('pic/books/first.jpg')");
+            $("#first").css("backgroundSize","cover");
+            $("#first_book_description").hide();
+        }
+        
+        if($("#third").hasClass("flip-vertical-left")) {
+            $("#third").removeClass("flip-vertical-left");
+            $("#third").css("background","url('pic/books/third.jpg')");
+            $("#third").css("backgroundSize","cover");
+            $("#third_book_description").hide();
+        }
 
     }
 });
@@ -114,8 +142,50 @@ $("#third").click(function() {
         selected.css("backgroundSize","cover");
         $("#third_book_description").show();
 
+        if($("#first").hasClass("flip-vertical-left")) {
+            $("#first").removeClass("flip-vertical-left");
+            $("#first").css("background","url('pic/books/first.jpg')");
+            $("#first").css("backgroundSize","cover");
+            $("#first_book_description").hide();
+        }
+        
+        if($("#second").hasClass("flip-vertical-left")) {
+            $("#second").removeClass("flip-vertical-left");
+            $("#second").css("background","url('pic/books/second.jpg')");
+            $("#second").css("backgroundSize","cover");
+            $("#second_book_description").hide();
+        }
     }
 });
+
+let hideOtherBooks = function(id) {
+    let elementToHideOne;
+    let elementToHideTwo;
+
+    if(id === "#first") {
+        elementToHideOne = $("#second");
+        elementToHideTwo = $("#third");
+        
+    } else if(id === "#second") {
+        elementToHideOne = $("#first");
+        elementToHideTwo = $("#third");
+    } else {
+        elementToHideOne = $("#first");
+        elementToHideTwo = $("#second");
+    }
+    
+    hideElements(elementToHideOne);
+    hideElements(elementToHideTwo);
+
+    let hideElements = function(id) {
+        let elementName = id.substring(1);
+        $(id).removeClass("flip-vertical-left");
+        $(id).css("background","url('pic/books/"+ elementName +".jpg')");
+        $(id).css("backgroundSize","cover");
+        $(id + "_book_description").hide();
+    }
+
+}
 
 let hideAuthorInfo = function() {
     $(".authorInfo").hide();
