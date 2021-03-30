@@ -21,17 +21,17 @@
         <menu>
             <ul>
                 <li>
-                    <a id="homeBtn" onclick="switchdiv(this.id)" href="javascript:void(0)">
+                    <a id="homeBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a id="bookBtn" onclick="switchdiv(this.id)" href="javascript:void(0)">
+                    <a id="bookBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Books
                     </a>
                 </li>
                 <li>
-                    <a id="gamesBtn" onclick="switchdiv(this.id)" href="javascript:void(0)">
+                    <a id="gamesBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Games
                     </a>
                 </li>
@@ -44,11 +44,9 @@
     <main>
         <div id="bookCont">
             <div class="bookLeft">
-                <div id="first" class="book" ></div>
-                <div id="second" class="book">
-                </div>
-                <div id="third" class="book">
-                </div>
+                <div id="first" class="book" onclick="bookSwitcher(this.id)"></div>
+                <div id="second" class="book" onclick="bookSwitcher(this.id)"></div>
+                <div id="third" class="book" onclick="bookSwitcher(this.id)"></div>
             </div>
             <div class="bookRight">
                 <div class="authorInfo">
@@ -114,7 +112,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     
-    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/updatedScript.js"></script>
 
     </body>
 </html>
