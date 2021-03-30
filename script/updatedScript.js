@@ -1,3 +1,53 @@
+function switchContent(id) {
+    
+    if(id === "homeBtn") {
+        
+        $("main").css("background","rgba(0,0,0, 0");
+        $("#bookCont").hide(1000);
+        $("#gamesCont").hide(1000);
+
+    } else if(id === "bookBtn") {
+
+        $("#gamesCont").hide(1000);
+
+        if($("#bookCont").css("display") == "none") {
+           menuShowHelper("#bookCont");
+        } else {
+            menuHideHelper("#bookCont");
+        }
+
+    } else {
+
+        $("#bookCont").hide(1000);
+        
+        if($("#gamesCont").css("display") == "none") {  
+           menuShowHelper("#gamesCont");
+        } else {
+           menuHideHelper("#gamesCont");
+        }
+
+    }   
+}
+
+let menuShowHelper = function(id) {
+    
+    $("main").css("background","rgba(0, 0, 0, .5)");
+    $(id).show(1000);
+    $(id).css("display","flex");
+    $(id).css("flex-direction","row");
+    $(id).css("flex-wrap","no-wrap");
+
+}
+
+let menuHideHelper = function(id) {
+    
+    $("main").css("background","rgba(0, 0, 0, 0)");
+    $(id).hide(1000);
+    $(id).css("display","none");
+
+}
+
+
 function bookSwitcher(id) {
 
     let hashId = "#" + id;
@@ -15,12 +65,10 @@ function bookSwitcher(id) {
 
     } else {
 
-        //hideAuthorInfo();
         selectedBook.addClass("flip-vertical-left");
         selectedBook.css("background", "url('pic/books/" + id + "-bg.jpg'");
         selectedBook.css("backgroundSize", "cover");
         $(hashId + "_book_description").show();
-
         hideOtherBooks(id);
 
     }
@@ -71,55 +119,4 @@ let getOtherElementsId = function(activeId) {
     }
 
     return arrayOfIds;
-}
-
-
-
-function switchContent(id) {
-    
-    if(id === "homeBtn") {
-        
-        $("main").css("background","rgba(0,0,0, 0");
-        $("#bookCont").hide(1000);
-        $("#gamesCont").hide(1000);
-
-    } else if(id === "bookBtn") {
-
-        $("#gamesCont").hide(1000);
-
-        if($("#bookCont").css("display") == "none") {
-           menuShowHelper("#bookCont");
-        } else {
-            menuHideHelper("#bookCont");
-        }
-
-    } else {
-
-        $("#bookCont").hide(1000);
-        
-        if($("#gamesCont").css("display") == "none") {  
-           menuShowHelper("#gamesCont");
-        } else {
-           menuHideHelper("#gamesCont");
-        }
-
-    }   
-}
-
-let menuShowHelper = function(id) {
-    
-    $("main").css("background","rgba(0, 0, 0, .5)");
-    $(id).show(1000);
-    $(id).css("display","flex");
-    $(id).css("flex-direction","row");
-    $(id).css("flex-wrap","no-wrap");
-
-}
-
-let menuHideHelper = function(id) {
-    
-    $("main").css("background","rgba(0, 0, 0, 0)");
-    $(id).hide(1000);
-    $(id).css("display","none");
-
 }
