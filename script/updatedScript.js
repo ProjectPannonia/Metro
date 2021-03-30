@@ -1,3 +1,6 @@
+/*
+    Main-menu functions 
+*/
 function switchContent(id) {
     
     if(id === "homeBtn") {
@@ -47,6 +50,9 @@ let menuHideHelper = function(id) {
 
 }
 
+/*
+    Book functions
+*/
 
 function bookSwitcher(id) {
 
@@ -119,4 +125,18 @@ let getOtherElementsId = function(activeId) {
     }
 
     return arrayOfIds;
+}
+
+/*
+    Game functions
+*/
+let gameSwitcher = function(id) {
+
+    let hashId = "#" + id;
+    let selectedGame = $(hashId);
+    let isFlipped = selectedGame.hasClass("flip-vertical-left");
+
+    if(isFlipped) {
+        
+    }
 }
