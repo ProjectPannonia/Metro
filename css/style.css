@@ -144,19 +144,30 @@ main div {
     padding: 10px;
     max-width: 600px;
     display: flex;
+    flex-direction:row;
+    justify-content: center;
 
 }
-.hidden {
-
-    display: none;
-
+.bookRight h1 {
+    font-size: 36px;
 }
 .bookRight p {
 
     font-size: 30px;
 
 }
+.bookRight ul {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.hidden {
+
+    display: none;
+
+}
 .book {
     
     width: 140px;
@@ -183,21 +194,9 @@ main div {
   }
 }
 
-#first {
-
-    background: url(../pic/books/first.jpg);
-    
-}
-#second {
-
-    background: url(../pic/books/second.jpg);
-
-}
-#third {
-
-    background: url(../pic/books/third.jpg);
-
-}
+#first { background: url(../pic/books/first.jpg); }
+#second { background: url(../pic/books/second.jpg); }
+#third { background: url(../pic/books/third.jpg); }
 #first, #second, #third, #firstGame, #secondGame, #thirdGame {
     background-size: cover;
 }
