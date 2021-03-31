@@ -96,19 +96,7 @@ main h1 {
 
 }
 
-/*
-main div {
-    height: 700px;
-    max-width: 1500px;
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    font-size: 36px;
-    padding: 20px;
-    line-height: 1.5;
-}
-*/
-.authorInfo {
+.authorInfo, .developerInfo {
 
     display: flex;
     justify-content: space-around;
@@ -123,12 +111,12 @@ main div {
     color: rgba(199,181,20,.8);
     text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
 }
-.authorImg {
+.authorImg, .dev_logo {
 
     min-width: 400px;
     
 }
-.bookLeft {
+.bookLeft, .gamesLeft {
 
     min-width: auto;
     max-width: 300px;
@@ -138,7 +126,7 @@ main div {
     flex-wrap: wrap;
 
 }
-.bookRight {
+.bookRight,.gamesRight {
 
     min-width: 1300px;
     padding: 10px;
@@ -201,15 +189,6 @@ main div {
     background-size: cover;
 }
 
-.gamesLeft {
-    min-width: auto;
-    max-width: 300px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 #firstGame {
     background: url(../pic/games/first.jpg);
     background-size: cover;
@@ -222,9 +201,19 @@ main div {
     background: url(../pic/games/third.jpg);
     background-size: cover;
 }
-#bookCont, #gamesCont {
+#bookCont {
     display: none;
     justify-content: space-between;
+}
+#gamesCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dev_Bio {
+    line-height: 1.1;
+    max-height: 400px;
+    overflow-x: hidden;
 }
 
 footer {

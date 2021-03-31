@@ -110,22 +110,7 @@ let hideElementById = function(idToHide) {
     }
 }
 
-let getOtherElementsId = function(activeId) {
-    let arrayOfIds = [];
 
-    if(activeId === "first") {
-        arrayOfIds.push("second");
-        arrayOfIds.push("third");
-    } else if (activeId === "second") {
-        arrayOfIds.push("first");
-        arrayOfIds.push("third");
-    } else {
-        arrayOfIds.push("first");
-        arrayOfIds.push("second");
-    }
-
-    return arrayOfIds;
-}
 
 /*
     Game functions
@@ -138,5 +123,60 @@ let gameSwitcher = function(id) {
 
     if(isFlipped) {
         
+       selectedGame.removeClass("flip-vertical-left");
+       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
+       selectedGame.css("opacity", "1");
+       $(hashId + "_game_description").hide();
+    
+    } else {
+    
+       selectedGame.addClass("flip-vertical-left");
+       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg\')");
+       selectedGame.css("opacity", ".5");
+       $(hashId + "_game_description").hide();
+    
     }
+
+    selectedGame.css("backgroundSize", "cover");
+}
+
+
+let getOtherElementsId = function(activeId) {
+    let arrayOfIds = [];
+    
+    switch(activeId) {
+        case "first":
+            arrayOfIds.push("second", "third");
+            break;
+        case "second":
+            arrayOfIds.push("first", "third");
+            break;
+        case "third":
+            arrayOfIds.push("first", "second");
+            break;
+        case "firstGame":
+            arrayOfIds.push("secondGame", "thirdGame");
+            break;
+        case "secondGame":
+            arrayOfIds.push("firstGame", "thirdGame");
+            break;
+        default:
+            arrayOfIds.push("firstGame", "secondGame");
+    }
+    /*
+    if(activeId === "first") {
+        arrayOfIds.push("second", "third");
+    } else if (activeId === "second") {
+        arrayOfIds.push("first", "third");
+    } else if(activeId === "third") {
+        arrayOfIds.push("first", "second");
+    } else if(activeId === "firstGame") {
+        arrayOfIds.push("secondGame", "thirdGame");
+    } else if(activeId === "secondGame") {
+        arrayOfIds.push("firstGame", "thirdGame");
+    } else {
+        arrayOfIds.push("firstGame", "secondGame");
+    }
+    */
+    return arrayOfIds;
 }
