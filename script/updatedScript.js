@@ -241,9 +241,9 @@ let switchSubGame = function(id) {
 let hideAllOtherGameContents = function(activaContainerName) {
 
     let gameContainers = [
-                            "firstGameStory", "firstGameInfo", "firstGameRequirements",
-                            "secondGameStory", "secondGameInfo", "secondGameRequirements",
-                            "thirdGameStory", "thirdGameInfo", "thirdGameRequirements"
+                            "firstGameStory", "firstGameInfo", "firstGameRequirements", "firstGameGallery",
+                            "secondGameStory", "secondGameInfo", "secondGameRequirements", "secondGameGallery",
+                            "thirdGameStory", "thirdGameInfo", "thirdGameRequirements", "thirdGameGallery"
     ];
 
     for(let i = 0; i < gameContainers.length; i++) {
