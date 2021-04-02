@@ -177,6 +177,7 @@ main h1 {
 #first { background: url(../pic/books/first.jpg); }
 #second { background: url(../pic/books/second.jpg); }
 #third { background: url(../pic/books/third.jpg); }
+
 #first, #second, #third, #firstGame, #secondGame, #thirdGame {
     background-size: cover;
 }
@@ -193,7 +194,7 @@ main h1 {
     background: url(../pic/games/third.jpg);
     background-size: cover;
 }
-#bookCont, #gamesCont, #contactCont {
+#bookCont, #gamesCont {
     display: none;
     justify-content: space-between;
 }
@@ -203,6 +204,14 @@ main h1 {
     max-height: 400px;
     overflow-x: hidden;
 }
+
+#contactCont {
+    display: none;
+}
+#formContainer form input{
+    display: inline-block;
+}
+
 
 footer {
 

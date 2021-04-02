@@ -2,7 +2,8 @@
     Main-menu functions 
 */
 function switchContent(id) {
-    
+    let idWithHash = "#" + id;
+    let contentDivShow = $(idWithHash).css("display") == "none";
 
     switch(id) {
         case "homeBtn":
@@ -17,12 +18,14 @@ function switchContent(id) {
 
             $("#gamesCont").hide(1000);
             $("#bookCont").css("display") == "none" ? menuShowHelper("#bookCont") : menuHideHelper("#bookCont");
+            //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
 
         case "gamesBtn":
 
             $("#bookCont").hide(1000);
             $("#gamesCont").css("display") == "none" ? menuShowHelper("#gamesCont") : menuHideHelper("#gamesCont");
+            //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
 
         case "contactBtn":
@@ -31,9 +34,24 @@ function switchContent(id) {
             $("#gamesCont").hide(1000);
 
             $("#contactCont").css("display") == "none" ? menuShowHelper("#contactCont") : menuHideHelper("#contactCont");
+            //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
     }
     
+}
+
+let getContent = function(btnId) {
+    switch(btnId) {
+        case "bookBtn":
+            return "#bookCont";
+            break;
+        case "gamesBtn":
+            return "#gamesCont";
+            break;
+        case "contactBtn":
+            return "#contactCont";
+            break;
+    }
 }
 
 let menuShowHelper = function(id) {
