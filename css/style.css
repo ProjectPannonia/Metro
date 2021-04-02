@@ -201,15 +201,16 @@ main h1 {
     background: url(../pic/games/third.jpg);
     background-size: cover;
 }
-#bookCont {
+#bookCont, #gamesCont {
     display: none;
     justify-content: space-between;
 }
+/*
 #gamesCont {
     display: flex;
     justify-content: space-between;
 }
-
+*/
 .dev_Bio {
     line-height: 1.1;
     max-height: 400px;

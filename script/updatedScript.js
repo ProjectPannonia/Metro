@@ -122,21 +122,22 @@ let gameSwitcher = function(id) {
     let isFlipped = selectedGame.hasClass("flip-vertical-left");
     
     if(isFlipped) {
+
+        $(".developerInfo").show();
         
        selectedGame.removeClass("flip-vertical-left");
        selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
        selectedGame.css("opacity", "1");
        selectedGame.css("backgroundSize", "cover");
-       $(hashId + "_game_description").hide();
+       $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
     
     } else {
     
        selectedGame.addClass("flip-vertical-left");
        selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
        selectedGame.css("opacity", ".5");
-       // first_game_description
-       console.log("sub: " + hashId.substring(0, hashId.length-4) + "_game_description");
-       $("first_game_description").show();
+        let descId = hashId.substring(0,hashId.length-4) + "_game_description";
+        $(descId).show();
         hideOtherGames(id);
     }
 
@@ -169,6 +170,7 @@ let hideGameElementById = function(idToHide) {
         elementToHide.removeClass("flip-vertical-left");
         elementToHide.css("background", "url('pic/games/" + idToHide.substring(0, idToHide.length-4) + ".jpg')");
         elementToHide.css("backgroundSize", "cover");
+        elementToHide.css("opacity", "1");
         $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
     }
 }
