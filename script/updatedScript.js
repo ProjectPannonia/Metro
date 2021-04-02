@@ -89,15 +89,15 @@ let hideOtherBooks = function(activeId) {
 
     $(".authorInfo").hide();
     selectedBook.addClass("flip-vertical-left");
-    selectedBook.css("background", "url('pic/books/" + activeId + "-bg.jpg'");
+    selectedBook.css("background", "url('pic/books/" + activeId + "-bg.jpg')");
     selectedBook.css("backgroundSize", "cover");
     $(activeId + "_book_description").show();
 
-    hideElementById(otherElementOne);
-    hideElementById(otherElementTwo);
+    hideBookElementById(otherElementOne);
+    hideBookElementById(otherElementTwo);
 }
 
-let hideElementById = function(idToHide) {
+let hideBookElementById = function(idToHide) {
     let hashId = "#" + idToHide;
     let elementToHide = $(hashId);
     let isFlipped = elementToHide.hasClass("flip-vertical-left");
@@ -117,28 +117,63 @@ let hideElementById = function(idToHide) {
 */
 let gameSwitcher = function(id) {
 
-    let hashId = "#" + id;
+    let hashId = "#" + id; //#firstGame
     let selectedGame = $(hashId);
     let isFlipped = selectedGame.hasClass("flip-vertical-left");
-
+    
     if(isFlipped) {
         
        selectedGame.removeClass("flip-vertical-left");
        selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
        selectedGame.css("opacity", "1");
+       selectedGame.css("backgroundSize", "cover");
        $(hashId + "_game_description").hide();
     
     } else {
     
        selectedGame.addClass("flip-vertical-left");
-       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg\')");
+       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
        selectedGame.css("opacity", ".5");
-       $(hashId + "_game_description").hide();
-    
+       // first_game_description
+       console.log("sub: " + hashId.substring(0, hashId.length-4) + "_game_description");
+       $("first_game_description").show();
+        hideOtherGames(id);
     }
 
-    selectedGame.css("backgroundSize", "cover");
+    
 }
+
+let hideOtherGames = function(activeId) {
+
+    let ids = getOtherElementsId(activeId);
+    let selectedGame = $("#" + activeId);
+    let otherElementOne = ids[0];
+    let otherElementTwo = ids[1];
+
+    $(".developerInfo").hide();
+    selectedGame.addClass("flip-vertical-left");
+    selectedGame.css("background", "url('pic/games/" + activeId.substring(0,activeId.length-4) + ".jpg')");
+    selectedGame.css("backgroundSize", "cover");
+    $(activeId + "_game_description").hide();
+
+    hideGameElementById(otherElementOne);
+    hideGameElementById(otherElementTwo);
+}
+
+let hideGameElementById = function(idToHide) {
+    let hashId = "#" + idToHide;
+    let elementToHide = $(hashId);
+    let isFlipped = elementToHide.hasClass("flip-vertical-left");
+
+    if(isFlipped) {
+        elementToHide.removeClass("flip-vertical-left");
+        elementToHide.css("background", "url('pic/games/" + idToHide.substring(0, idToHide.length-4) + ".jpg')");
+        elementToHide.css("backgroundSize", "cover");
+        $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
+    }
+}
+
+
 
 
 let getOtherElementsId = function(activeId) {
@@ -163,20 +198,6 @@ let getOtherElementsId = function(activeId) {
         default:
             arrayOfIds.push("firstGame", "secondGame");
     }
-    /*
-    if(activeId === "first") {
-        arrayOfIds.push("second", "third");
-    } else if (activeId === "second") {
-        arrayOfIds.push("first", "third");
-    } else if(activeId === "third") {
-        arrayOfIds.push("first", "second");
-    } else if(activeId === "firstGame") {
-        arrayOfIds.push("secondGame", "thirdGame");
-    } else if(activeId === "secondGame") {
-        arrayOfIds.push("firstGame", "thirdGame");
-    } else {
-        arrayOfIds.push("firstGame", "secondGame");
-    }
-    */
+    
     return arrayOfIds;
 }
