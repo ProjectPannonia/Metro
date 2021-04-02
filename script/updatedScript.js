@@ -18,7 +18,7 @@ function switchContent(id) {
 
             $("#gamesCont").hide(1000);
             $("#contactCont").hide(1000);
-            
+
             $("#bookCont").css("display") == "none" ? menuShowHelper("#bookCont") : menuHideHelper("#bookCont");
             //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
@@ -200,9 +200,6 @@ let hideGameElementById = function(idToHide) {
         $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
     }
 }
-
-
-
 
 let getOtherElementsId = function(activeId) {
     let arrayOfIds = [];
