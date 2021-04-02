@@ -3,42 +3,37 @@
 */
 function switchContent(id) {
     
-    if(id === "homeBtn") {
-        
-        $("main").css("background","rgba(0,0,0, 0");
-        $("#bookCont").hide(1000);
-        $("#gamesCont").hide(1000);
 
-    } else if(id === "bookBtn") {
+    switch(id) {
+        case "homeBtn":
 
-        $("#gamesCont").hide(1000);
+            $("main").css("background","rgba(0,0,0, 0");
+            $("#bookCont").hide(1000);
+            $("#gamesCont").hide(1000);
+            $("#contactCont").hide(1000);
+            break;
 
-        if($("#bookCont").css("display") == "none") {
-           menuShowHelper("#bookCont");
-        } else {
-            menuHideHelper("#bookCont");
-        }
+        case "bookBtn":
 
-    } else if(id === "gamesBtn") {
+            $("#gamesCont").hide(1000);
+            $("#bookCont").css("display") == "none" ? menuShowHelper("#bookCont") : menuHideHelper("#bookCont");
+            break;
 
-        $("#bookCont").hide(1000);
-        
-        if($("#gamesCont").css("display") == "none") {  
-           menuShowHelper("#gamesCont");
-        } else {
-           menuHideHelper("#gamesCont");
-        }
+        case "gamesBtn":
 
-    } else if(id === "contactCont"){
-        $("#bookCont").hide(1000);
-        $("#gamesCont").hide(1000);
+            $("#bookCont").hide(1000);
+            $("#gamesCont").css("display") == "none" ? menuShowHelper("#gamesCont") : menuHideHelper("#gamesCont");
+            break;
 
-        if( ("#contactCont").css("display") == "none") {
-            menuShowHelper("#contactCont");
-        } else {
-            menuHideHelper("#contactCont");
-        }
+        case "contactBtn":
+
+            $("#bookCont").hide(1000);
+            $("#gamesCont").hide(1000);
+
+            $("#contactCont").css("display") == "none" ? menuShowHelper("#contactCont") : menuHideHelper("#contactCont");
+            break;
     }
+    
 }
 
 let menuShowHelper = function(id) {
