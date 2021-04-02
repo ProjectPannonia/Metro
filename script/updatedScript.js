@@ -19,7 +19,7 @@ function switchContent(id) {
             menuHideHelper("#bookCont");
         }
 
-    } else {
+    } else if(id === "gamesBtn") {
 
         $("#bookCont").hide(1000);
         
@@ -29,7 +29,16 @@ function switchContent(id) {
            menuHideHelper("#gamesCont");
         }
 
-    }   
+    } else if(id === "contactCont"){
+        $("#bookCont").hide(1000);
+        $("#gamesCont").hide(1000);
+
+        if( ("#contactCont").css("display") == "none") {
+            menuShowHelper("#contactCont");
+        } else {
+            menuHideHelper("#contactCont");
+        }
+    }
 }
 
 let menuShowHelper = function(id) {

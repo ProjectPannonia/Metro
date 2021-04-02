@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
 * {
-
     box-sizing: border-box;
-
 }
 
 body {
@@ -11,6 +9,25 @@ body {
     background: url('../pic/main-bg.jpg') no-repeat;
     font-family: 'Teko', sans-serif;
     color: white;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+
+    align-content: center;
+    display: inline;
+    padding: 10px;
 
 }
 
@@ -30,26 +47,7 @@ body {
 
 }
 
-a {
 
-    text-decoration: none;
-    color: white;
-
-}
-
-ul {
-
-    list-style: none;
-
-}
-
-ul li{
-
-    align-content: center;
-    display: inline;
-    padding: 10px;
-
-}
 
 header {
 
@@ -59,9 +57,7 @@ header {
 }
 
 header menu ul {
-
     margin-top: 30px;
-
 }
 
 header menu ul li a {
@@ -91,9 +87,7 @@ main {
 }
 
 main h1 {
-
     text-align: center;
-
 }
 
 .authorInfo, .developerInfo {
@@ -112,9 +106,7 @@ main h1 {
     text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
 }
 .authorImg, .dev_logo {
-
     min-width: 400px;
-    
 }
 .bookLeft, .gamesLeft {
 
@@ -201,16 +193,11 @@ main h1 {
     background: url(../pic/games/third.jpg);
     background-size: cover;
 }
-#bookCont, #gamesCont {
+#bookCont, #gamesCont, #contactCont {
     display: none;
     justify-content: space-between;
 }
-/*
-#gamesCont {
-    display: flex;
-    justify-content: space-between;
-}
-*/
+
 .dev_Bio {
     line-height: 1.1;
     max-height: 400px;
