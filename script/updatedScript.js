@@ -226,3 +226,103 @@ let getOtherElementsId = function(activeId) {
     
     return arrayOfIds;
 }
+
+/*
+    Sub game content functions
+*/
+let switchSubGame = function(id) {
+
+    switch(id) {
+        case "firstGameStoryBtn":
+            
+            $("#firstGameStory").show(1000);
+            $("#firstGameInfo").hide();
+            $("#firstGameRequirements").hide();
+            break;
+
+        case "firstGameInfoBtn":
+            
+            $("#firstGameInfo").show(1000);
+            $("#firstGameStory").hide();
+            $("#firstGameRequirements").hide();
+            break;
+
+        case "firstGameRequirementsBtn":
+            
+            $("#firstGameRequirements").show(1000);
+            $("#firstGameInfo").hide();
+            $("#firstGameStory").hide();
+            break;
+
+        case "secondGameStoryBtn":
+
+            $("#secondGameStory").show(1000);
+            $("#secondGameInfo").hide();
+            $("#secondGameRequirements").hide();
+            break;
+
+        case "secondGameInfoBtn":
+
+            $("#secondGameInfo").show(1000);
+            $("#secondGameStory").hide();
+            $("#secondGameRequirements").hide();
+            break;
+
+        case "secondGameRequirementsBtn":
+
+            $("#secondGameRequirements").show(1000);
+            $("#secondGameInfo").hide();
+            $("#secondGameStory").hide();
+            break;
+
+        case "thirdGameStoryBtn":
+
+            $("#thirdGameStory").show(1000);
+            $("#thirdGameInfo").hide();
+            $("#thirdGameRequirements").hide();
+            break;
+
+        case "thirdGameInfoBtn":
+
+            $("#thirdGameInfo").show(1000);
+            $("#thirdGameStory").hide();
+            $("#thirdGameRequirements").hide();
+            break;
+
+        case "thirdGameRequirementsBtn":
+
+            $("#thirdGameRequirements").show(1000);
+            $("#thirdGameInfo").hide();
+            $("#thirdGameStory").hide();
+            break;
+
+    }
+}
+let hideOtherSubGameInformation = function(id) {
+    let hideTheseContainers = getOtherSubGameContainers(id);
+    console.log(hideTheseContainers);
+    console.log(hideTheseContainers[0]);
+    $("#" + hideTheseContainers[0]).hide();
+    $("#" + hideTheseContainers[1]).hide();
+    /*for(let i = 0; i < hideTheseContainers.length; i++) {
+        console.log("#" + hideTheseContainers[i]);
+        
+    }*/
+}
+let getOtherSubGameContainers = function(id) {
+    console.log("Catched id: " + id);
+    let containersToHide = [];
+
+    switch(id) {
+        case "firstGameStoryBtn":
+            containersToHide.push("firstGameInfo", "firstGameRequirements");
+            break;
+        case "firstGameInfoBtn":
+            containersToHide.push("firstGameStory","firstGameRequirements");
+            break;
+        case "firstGameRequirementsBtn":
+            containersToHide.push("firstGameStory", "firstGameInfo");
+            break;
+    }
+    return containersToHide;
+}

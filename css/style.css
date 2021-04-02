@@ -202,11 +202,18 @@ main h1 {
     font-size: 26px;
     max-height: 50px;
 }
+
 .gamesSubMenu a:hover {
     cursor: pointer;
     color: rgba(199,181,20,.8);
     text-shadow: 0 0 15px rgba(199, 181, 20, .8), 0 0 10px rgba(199, 181, 20, .8);
 }
+
+.subGameContent {
+    min-width: 200px;
+    min-height: 200px;
+}
+
 #bookCont, #gamesCont {
     display: none;
     justify-content: space-between;
