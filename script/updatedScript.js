@@ -17,6 +17,8 @@ function switchContent(id) {
         case "bookBtn":
 
             $("#gamesCont").hide(1000);
+            $("#contactCont").hide(1000);
+            
             $("#bookCont").css("display") == "none" ? menuShowHelper("#bookCont") : menuHideHelper("#bookCont");
             //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
@@ -24,6 +26,8 @@ function switchContent(id) {
         case "gamesBtn":
 
             $("#bookCont").hide(1000);
+            $("#contactCont").hide(1000);
+
             $("#gamesCont").css("display") == "none" ? menuShowHelper("#gamesCont") : menuHideHelper("#gamesCont");
             //contentDivShow ? menuShowHelper(getContent(idWithHash)) : menuHideHelper(getContent(idWithHash));
             break;
