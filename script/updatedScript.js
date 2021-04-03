@@ -264,9 +264,11 @@ let scaleDown = function(id) {
     $("#" + id).addClass("scale-down-center");
     setTimeout(function() {
         $("#" + id).addClass("scale-up-center");
-    },300);
+    },500);
+    
     setTimeout(function() {
+        window.open("http://www.4a-games.com/");
         $("#" + id).removeClass("scale-down-center");
         $("#" + id).removeClass("scale-up-center");
-    },10);
+    },700);
 }
