@@ -253,3 +253,9 @@ let hideAllOtherGameContents = function(activaContainerName) {
     }
 
 }
+
+let pictureSwitcher = function(id) {
+    console.log("pushed: " + id)
+    $("#activePicture").css("src","url('../pic/games/gallery/2033/2.jpg')");
+    console.log( "src: " + $("#activePicture").css("src"));
+}

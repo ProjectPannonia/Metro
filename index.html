@@ -24,17 +24,17 @@
                         Home
                     </a>
                 </li>
-                <li>
+                <li >
                     <a id="bookBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Books
                     </a>
                 </li>
-                <li>
+                <li >
                     <a id="gamesBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Games
                     </a>
                 </li>
-                <li>
+                <li >
                     <a id="contactBtn" onclick="switchContent(this.id)" href="javascript:void(0)">
                         Contact
                     </a>
@@ -176,7 +176,28 @@
                     <div id="thirdGameStory" class="subGameContent hidden">Story</div>
                     <div id="thirdGameInfo" class="subGameContent hidden">Info</div>
                     <div id="thirdGameRequirements" class="subGameContent hidden">Requriements</div>
-                    <div id="thirdGameGallery" class="subGameContent hidden">Gallery</div>
+                    <div id="thirdGameGallery" class="subGameContent hidden">
+                        <div id="activePictureContainer">
+                            <img  alt="activePicture">
+                        </div>
+                        <div id="pictureSelector">
+                            <div class="picBox">
+                                <a id="firstPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/1.jpg"></a>
+                            </div>
+                            <div class="picBox">
+                                <a id="secondPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/2.jpg"></a>
+                            </div>
+                            <div class="picBox">
+                                <a id="thirdPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/3.jpg"></a>
+                            </div>
+                            <div class="picBox">
+                                <a id="fourthPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/4.jpg"></a>
+                            </div>
+                            <div class="picBox">
+                                <a id="fifthPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/5.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
