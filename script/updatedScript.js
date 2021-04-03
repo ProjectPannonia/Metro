@@ -259,3 +259,14 @@ let pictureSwitcher = function(id) {
     $("#activePicture").css("src","url('../pic/games/gallery/2033/2.jpg')");
     console.log( "src: " + $("#activePicture").css("src"));
 }
+
+let scaleDown = function(id) {
+    $("#" + id).addClass("scale-down-center");
+    setTimeout(function() {
+        $("#" + id).addClass("scale-up-center");
+    },300);
+    setTimeout(function() {
+        $("#" + id).removeClass("scale-down-center");
+        $("#" + id).removeClass("scale-up-center");
+    },10);
+}
