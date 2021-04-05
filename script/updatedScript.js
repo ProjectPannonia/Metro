@@ -167,15 +167,14 @@ let gameSwitcher = function(id) {
         let descId = hashId.substring(0,hashId.length-4) + "_game_description";
         $(descId).show();
         hideOtherGames(id);
-    }
 
-    
+    }
 }
 
 let hideOtherGames = function(activeId) {
 
-    let ids = getOtherElementsId(activeId);
     let selectedGame = $("#" + activeId);
+    let ids = getOtherElementsId(activeId);
     let otherElementOne = ids[0];
     let otherElementTwo = ids[1];
 
