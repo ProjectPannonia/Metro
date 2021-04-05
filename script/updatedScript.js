@@ -2,8 +2,6 @@
     Main-menu functions 
 */
 function switchContent(id) {
-    let idWithHash = "#" + id;
-    let contentDivShow = $(idWithHash).css("display") == "none";
 
     switch(id) {
         case "homeBtn":

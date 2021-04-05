@@ -250,37 +250,35 @@ main h1 {
     background: url(../pic/games/third.jpg);
     background-size: cover;
 }
-#thirdGameGallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/**/
+blockquote::before {
+    content: '"';
+  }
+  
+blockquote::after {
+    content: '"';
 }
-#activePictureContainer {
-    min-width: 1400px;
-    min-height: 420px;
+  
+blockquote::before, blockquote::after {
+    opacity: 0.25;
+    padding: 0 10px;
+    font-size: 5em;
+}
+  
+blockquote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5em;
+    margin: 10px auto;
+    /* more styles */
+}
+.quote_fear {
+    width: 670px;
+    height: 300px;
     margin: 10px auto;
 }
-#activePictureContainer img {
-
-    margin: 10px auto;
-    background: url('../pic/games/gallery/2033/1.jpg');
-    width: 100%;
-    height: 100%;
-}
-#pictureSelector {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self: flex-end;
-}
-
-.picBox {
-    padding: 10px;
-}
-.picBox img {
-    max-width: 200px;
-}
+/**/
 
 .gamesSubMenu {
     display: flex;
