@@ -149,17 +149,18 @@ let gameSwitcher = function(id) {
 
         $(".developerInfo").show();
         
-       selectedGame.removeClass("flip-vertical-left");
-       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
-       selectedGame.css("opacity", "1");
-       selectedGame.css("backgroundSize", "cover");
-       $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
+        selectedGame.removeClass("flip-vertical-left");
+        selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
+        selectedGame.css("opacity", "1");
+        selectedGame.css("backgroundSize", "cover");
+        $(hashId.substring(0,hashId.length-4) + "_game_description").hide();
     
     } else {
-    
-       selectedGame.addClass("flip-vertical-left");
-       selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
-       selectedGame.css("opacity", ".5");
+        
+        $(hashId + "Story").show();
+        selectedGame.addClass("flip-vertical-left");
+        selectedGame.css("background","url('pic/games/" + id.substring(0,id.length-4) + ".jpg')");
+        selectedGame.css("opacity", ".5");
         let descId = hashId.substring(0,hashId.length-4) + "_game_description";
         $(descId).show();
         hideOtherGames(id);
@@ -233,8 +234,10 @@ let getOtherElementsId = function(activeId) {
 let switchSubGame = function(id) {
     
     let containerName = id.substring(0,id.length-3);
+
     $("#" + containerName).show(1000);
     hideAllOtherGameContents(containerName);
+
 }
 let hideAllOtherGameContents = function(activaContainerName) {
 
