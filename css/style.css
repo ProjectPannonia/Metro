@@ -300,6 +300,18 @@ main h1 {
     min-width: 200px;
     min-height: 200px;
 }
+.subGameContent p {
+    font-size: 26px;
+}
+.requirements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.req_box {
+    padding: 10px;
+}
 
 #bookCont, #gamesCont {
     display: none;
