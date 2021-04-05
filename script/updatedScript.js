@@ -41,21 +41,6 @@ function switchContent(id) {
     }
     
 }
-
-let getContent = function(btnId) {
-    switch(btnId) {
-        case "bookBtn":
-            return "#bookCont";
-            break;
-        case "gamesBtn":
-            return "#gamesCont";
-            break;
-        case "contactBtn":
-            return "#contactCont";
-            break;
-    }
-}
-
 let menuShowHelper = function(id) {
     
     $("main").css("background","rgba(0, 0, 0, .5)");
@@ -75,7 +60,24 @@ let menuHideHelper = function(id) {
 }
 
 /*
-    Book functions
+let getContent = function(btnId) {
+    switch(btnId) {
+        case "bookBtn":
+            return "#bookCont";
+            break;
+        case "gamesBtn":
+            return "#gamesCont";
+            break;
+        case "contactBtn":
+            return "#contactCont";
+            break;
+    }
+}
+*/
+
+
+/*
+    Book tab functions
 */
 
 function bookSwitcher(id) {
@@ -103,7 +105,6 @@ function bookSwitcher(id) {
 
     }
 }
-
 let hideOtherBooks = function(activeId) {
     
     let ids = getOtherElementsId(activeId);
@@ -119,9 +120,10 @@ let hideOtherBooks = function(activeId) {
 
     hideBookElementById(otherElementOne);
     hideBookElementById(otherElementTwo);
-}
 
+}
 let hideBookElementById = function(idToHide) {
+
     let hashId = "#" + idToHide;
     let elementToHide = $(hashId);
     let isFlipped = elementToHide.hasClass("flip-vertical-left");
@@ -132,6 +134,7 @@ let hideBookElementById = function(idToHide) {
         elementToHide.css("backgroundSize", "cover");
         $(hashId + "_book_description").hide();
     }
+
 }
 
 
