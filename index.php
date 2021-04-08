@@ -140,13 +140,82 @@
                             <li><a id="firstGameStoryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Story</a></li>
                             <li><a id="firstGameInfoBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Info</a></li>
                             <li><a id="firstGameRequirementsBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Requirements</a></li>
-                            <!--<li><a id="firstGameGalleryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Gallery</a></li>-->
                         </ul>
                     </div>
-                    <div id="firstGameStory" class="subGameContent hidden">Story</div>
+                    <div id="firstGameStory" class="subGameContent hidden">
+                        <p>
+                            Metro 2033 is a first-person shooter survival horror video game developed by 4A Games and published by THQ. ... The story is based on Dmitry Glukhovsky's novel of the same name, and is set in the ruins of Moscow following a nuclear war, where the survivors are forced to live in underground Metro tunnels.
+                        </p>
+                        <div class ="quote_fear">
+                            <blockquote>
+                                Fear the light. Fear the dark. Fear the future.
+                            </blockquote>
+                        </div>
+                    </div>
                     <div id="firstGameInfo" class="subGameContent hidden">Info</div>
-                    <div id="firstGameRequirements" class="subGameContent hidden">Requriements</div>
-                    <!--<div id="firstGameGallery" class="subGameContent hidden">Gallery</div>-->
+                    <div id="firstGameRequirements" class="subGameContent hidden">
+                        <h1>System requirements</h1>
+                        <div class="requirements">
+                            <div class="req_box">
+                                <h3>Minimum</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>Windows XP, Vista, or 7 https</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>Dual core CPU (any Core 2 Duo or better) </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>1 GB RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>DirectX 9, Shader Model 3 compliant graphics cards (GeForce 8800, GeForce GT220 and above)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>DirectX 9.0c</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sound:</td>
+                                        <td>DirectX Compatible Sound Card</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="req_box">
+                                <h3>Recommended</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>Windows XP, Vista, or 7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>Any Quad Core or 3.0+ GHz Dual Core CPU</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>2 GB RAM </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>DirectX 10 compliant graphics card (GeForce GTX 260 and above)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>DirectX 10 or higher</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sound:</td>
+                                        <td>DirectX Compatible Sound Card</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="second_game_description" class="gamesRight hidden">
                     <h1>Metro Last Light</h1>
@@ -155,13 +224,89 @@
                             <li><a id="secondGameStoryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Story</a></li>
                             <li><a id="secondGameInfoBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Info</a></li>
                             <li><a id="secondGameRequirementsBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Requirements</a></li>
-                            <!--<li><a id="secondGameGalleryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Gallery</a></li>-->
                         </ul>
                     </div>
-                    <div id="secondGameStory" class="subGameContent hidden">Story</div>
-                    <div id="secondGameInfo" class="subGameContent hidden">Info</div>
-                    <div id="secondGameRequirements" class="subGameContent hidden">Requriements</div>
-                    <!--<div id="secondGameGallery" class="subGameContent hidden">Gallery</div>-->
+                    <div id="secondGameStory" class="subGameContent hidden">
+                        <h1>Story</h1>
+                        <p>
+                            Plot. Metro: Last Light takes place in 2034, one year after the events of Metro 2033, following the ending of the original novel in which Artyom's missile strike against the Dark Ones — mysterious beings that seemingly threatened the survivors of a nuclear war living in the Moscow Metro — occurred.
+                        </p>
+                        <div class ="quote_fear">
+                            <blockquote>
+                                Last bullet. Last breath. Last chance. 
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div id="secondGameInfo" class="subGameContent hidden">
+                        <h1>Info</h1>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div id="secondGameRequirements" class="subGameContent hidden">
+                        <h1>System requirements</h1>
+                        <div class="requirements">
+                            <div class="req_box">
+                                <h3>Minimum</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>Windows Vista, 7 or 8 (64-bit only)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>Dual Core CPU (2.2+ GHz Dual Core CPU or better)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>2 GB RAM.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>DirectX 10, Shader Model 4 compliant graphics cards (GeForce 8800 GT 512 MB, GeForce GTS 250, etc)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>Version 10.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage:</td>
+                                        <td>10 GB available space.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="req_box">
+                                <h3>Recommended</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>Windows Vista, 7 or 8 (64-bit only)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>Any Quad Core or 3.0+ GHz Dual Core CPU</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>2 GB RAM.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>DirectX 11 compliant graphics card (GeForce GTX 480 and above)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>Version 11.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage:</td>
+                                        <td>10 GB available space.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div id="third_game_description" class="gamesRight hidden">
                     <h1>Metro Exodus</h1>
@@ -170,35 +315,93 @@
                             <li><a id="thirdGameStoryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Story</a></li>
                             <li><a id="thirdGameInfoBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Info</a></li>
                             <li><a id="thirdGameRequirementsBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Requirements</a></li>
-                            <!--<li><a id="thirdGameGalleryBtn" onclick="switchSubGame(this.id)" href="javascript:void(0)">Gallery</a></li>-->
+                            
                         </ul>
                     </div>
-                    <div id="thirdGameStory" class="subGameContent hidden">Story</div>
+                    <div id="thirdGameStory" class="subGameContent hidden">
+                        <h1>Story</h1>
+                        <p>
+                            Sam's Story — Metro Exodus is set in the year 2035, one year after the events of Metro: Last Light, on a post-apocalyptic Earth that has been devastated by a nuclear war. ... The story takes place over the course of one year, starting with a harsh nuclear winter in the Metro.
+                        </p>
+                        <div class ="quote_fear">
+                            <blockquote>
+                                To live without hope is to cease to live.
+                            </blockquote>
+                        </div>
+                    </div>
                     <div id="thirdGameInfo" class="subGameContent hidden">Info</div>
-                    <div id="thirdGameRequirements" class="subGameContent hidden">Requriements</div>
-                    <!--<div id="thirdGameGallery" class="subGameContent hidden">
-                        <div id="activePictureContainer">
-                            <img  alt="activePicture">
+                    <div id="thirdGameRequirements" class="subGameContent hidden">
+                        <h1>System requirements</h1>
+                        <div class="requirements">
+                            <div class="req_box">
+                                <h3>Minimum</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>WINDOWS 7 | 8 | 10 (64-bit) )</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>INTEL CORE I5-4440 or equivalent</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>8 GB RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>2 GB VRAM, GEFORCE GTX 670 | GEFORCE GTX 1050 | AMD RADEON HD 7870</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>Version 11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage:</td>
+                                        <td>59 GB available space</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sound:</td>
+                                        <td>DirectX Compatible Sound Card</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="req_box">
+                                <h3>Recommended</h3>
+                                <table>
+                                    <tr>
+                                        <td>OS:</td>
+                                        <td>WINDOWS 10 (64-bit)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processor:</td>
+                                        <td>INTEL CORE I7-4770K or equivalent</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memory:</td>
+                                        <td>8 GB RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphics:</td>
+                                        <td>8 GB VRAM, GEFORCE GTX 1070 | GEFORCE RTX 2060 | AMD RX VEGA 56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX:</td>
+                                        <td>Version 12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage:</td>
+                                        <td>59 GB available space</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sound:</td>
+                                        <td>DirectX Compatible Sound Card</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <div id="pictureSelector">
-                            <div class="picBox">
-                                <a id="firstPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/1.jpg"></a>
-                            </div>
-                            <div class="picBox">
-                                <a id="secondPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/2.jpg"></a>
-                            </div>
-                            <div class="picBox">
-                                <a id="thirdPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/3.jpg"></a>
-                            </div>
-                            <div class="picBox">
-                                <a id="fourthPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/4.jpg"></a>
-                            </div>
-                            <div class="picBox">
-                                <a id="fifthPic" onclick = "pictureSwitcher(this.id)" href="javascript:void(0)"><img src="pic/games/gallery/2033/5.jpg"></a>
-                            </div>
-                        </div>
-                    </div>-->
-                
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -227,9 +430,7 @@
     
 </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-    </script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="script/updatedScript.js"></script>
 
     </body>

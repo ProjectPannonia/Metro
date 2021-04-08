@@ -173,6 +173,7 @@ let gameSwitcher = function(id) {
 
 let hideOtherGames = function(activeId) {
 
+
     let selectedGame = $("#" + activeId);
     let ids = getOtherElementsId(activeId);
     let otherElementOne = ids[0];

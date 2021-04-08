@@ -239,15 +239,15 @@ main h1 {
 }
 
 #firstGame {
-    background: url(../pic/games/first.jpg);
+    background: url(pic/games/first.jpg);
     background-size: cover;
 }
 #secondGame {
-    background: url(../pic/games/second.jpg);
+    background: url(pic/games/second.jpg);
     background-size: cover;
 }
 #thirdGame {
-    background: url(../pic/games/third.jpg);
+    background: url(pic/games/third.jpg);
     background-size: cover;
 }
 /**/
